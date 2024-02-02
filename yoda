@@ -1,6 +1,11 @@
 #!/bin/bash
 
 while true; do
-    mpg123 /usr/share/yoda/yoda.mp3
+    if [ "$((RANDOM % 10))" -eq 5 ];
+    then
+        mpg123 /usr/share/yoda/yoda_longer.mp3
+    else
+        mpg123 /usr/share/yoda/yoda.mp3
+    fi
     sleep $((RANDOM % 60 + 10))
 done
