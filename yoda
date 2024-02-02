@@ -1,6 +1,6 @@
 #!/bin/bash
 
 while true; do
-    mpg123 /usr/share/yodad/yoda.mp3
+    mpg123 /usr/share/yoda/yoda.mp3
     sleep $((RANDOM % 60 + 10))
 done
