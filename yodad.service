@@ -1,9 +1,9 @@
 [Unit]
 Description=aaaargh
-After=multi-user.target
 
 [Service]
 ExecStart=yoda
+Type=simple
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=default.target
